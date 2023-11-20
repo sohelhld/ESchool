@@ -8,10 +8,6 @@ app.use(express.json())
 
 app.use("/",userRouter)
 
-app.get('/',(req,res)=>{
-    res.send("ok")
-})
-
 app.listen(process.env.port,async(req,res)=>{
     try {
         await Connected
